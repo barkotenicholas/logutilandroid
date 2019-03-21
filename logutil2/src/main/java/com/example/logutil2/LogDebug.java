@@ -4,11 +4,22 @@ import android.util.Log;
 
 public class LogDebug {
 
-
-    private static final String TAG = "SUPER_AWESOME_APP";
-
-
-    public static void  d(String message){
-        Log.d(TAG,message);
+    public static int Plus(int a, int  b){
+        return  a+b;
     }
+    public static int Minus(int a, int  b){
+        return  a-b;
+    }
+    public static int Times(int a, int  b){
+        return  a-b;
+    }
+    public static float Divide(int a, int  b){
+        if(b == 0){
+            throw  new IllegalArgumentException("cannot divide by zero");
+        }
+        else {
+            return a/b;
+        }
+    }
+
 }
